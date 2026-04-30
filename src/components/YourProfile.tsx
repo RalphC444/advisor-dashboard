@@ -51,13 +51,9 @@ export default function YourProfile() {
 
         {/* ── LEFT: header + progress + tabs + content ── */}
         <div className="flex flex-col flex-1 min-w-0">
-          {/* Header + progress */}
-          <div className="flex items-center justify-between mb-2">
+          {/* Header */}
+          <div className="flex items-center justify-between mb-4">
             <p className="font-semibold text-sm text-[#1a1d29]">Your Profile</p>
-            <span className="text-[11px] font-semibold text-[#1a1d29]">{pct}/100%</span>
-          </div>
-          <div className="w-full h-1.5 bg-[#f0f0ee] rounded-full mb-4">
-            <div className="h-full bg-[#1a1d29] rounded-full transition-all" style={{ width: `${pct}%` }} />
           </div>
 
           {/* Tabs */}
