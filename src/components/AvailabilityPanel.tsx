@@ -47,7 +47,6 @@ export default function AvailabilityPanel() {
   today.setHours(0, 0, 0, 0)
 
   const [weekOffset, setWeekOffset] = useState(0)
-  const [saved, setSaved] = useState(false)
 
   // Pre-populate the first window with realistic data
   const [availability, setAvailability] = useState<Record<string, Record<TimeSlot, boolean>>>(() => {
@@ -77,13 +76,6 @@ export default function AvailabilityPanel() {
       const day = prev[key] ?? { ...EMPTY }
       return { ...prev, [key]: { ...day, [slot]: !day[slot] } }
     })
-    setSaved(false)
-  }
-
-  async function save() {
-    setSaved(true)
-    await new Promise(r => setTimeout(r, 800))
-    setSaved(false)
   }
 
   return (

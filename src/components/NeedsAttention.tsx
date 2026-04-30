@@ -483,7 +483,7 @@ function InvitationsTab() {
                     return (
                       <button
                         key={opt}
-                        onClick={() => toggleAnswer(currentQ.id, opt, currentQ.type)}
+                        onClick={() => toggleAnswer(currentQ.id, opt, currentQ.type as 'single' | 'multi')}
                         className={`w-full text-left px-4 py-3 rounded-xl border text-sm font-medium transition-all ${
                           selected
                             ? 'border-[#1155a6] bg-[#e7f1fc] text-[#1155a6]'
