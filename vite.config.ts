@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/advisor-dashboard/',
   server: {
     port: 5182,
   },
