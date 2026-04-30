@@ -56,10 +56,10 @@ export default function CalendarMessagesPanel() {
                     <span className={`text-xs font-semibold truncate ${msg.unread ? 'text-[#1a1d29]' : 'text-[#6b7280]'}`}>{msg.pm}</span>
                     <span className="text-[10px] text-[#9ca3af] shrink-0">{msg.time}</span>
                   </div>
-                  <p className="text-[10px] text-[#9ca3af] truncate mt-0.5">{msg.project}</p>
+                  <p className={`text-[10px] text-[#9ca3af] mt-0.5 ${isExpanded ? '' : 'truncate'}`}>{msg.project}</p>
                   <div className="flex items-center gap-2 mt-1">
                     {msg.unread && <span className="w-1.5 h-1.5 rounded-full bg-[#1155a6] shrink-0" />}
-                    <p className={`text-[11px] truncate ${msg.unread ? 'text-[#1a1d29] font-medium' : 'text-[#9ca3af]'}`}>{msg.preview}</p>
+                    <p className={`text-[11px] ${isExpanded ? '' : 'truncate'} ${msg.unread ? 'text-[#1a1d29] font-medium' : 'text-[#9ca3af]'}`}>{msg.preview}</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-end gap-1 shrink-0">
