@@ -59,9 +59,6 @@ export default function WelcomeRow() {
           <h2 className="text-white font-bold text-xl md:text-2xl leading-tight">
             {greeting}, <span className="text-[#ffd23f]">Matt</span> 👋
           </h2>
-          <p className="text-white/60 text-sm mt-1">
-            <span className="text-white font-semibold">$900</span> in pending payments · <span className="text-white font-semibold">12 consultations</span> completed this month — <span className="text-[#ffd23f] font-semibold">4 invitations</span> need your response.
-          </p>
         </div>
       </div>
 
