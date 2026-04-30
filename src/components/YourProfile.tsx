@@ -43,8 +43,6 @@ export default function YourProfile() {
   const [editingHistory, setEditingHistory] = useState(false)
   const [consultMode, setConsultMode] = useState<'phone' | 'video' | 'in-person'>('phone')
 
-  const pct = 29
-
   return (
     <div className="bg-white border border-[#ebebea] shadow-[0_1px_6px_rgba(0,0,0,0.06)] rounded-2xl px-[21px] py-[19px]">
       <div className="flex gap-10">
